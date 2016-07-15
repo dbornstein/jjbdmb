@@ -34,6 +34,7 @@ def main():
 	
 	
 	global name
+	cls()
 	name = input("What is your title?  ")	
 	cls()
 	s = '\n' + 'Hello ' + name + ', don\'t do anything destructive.'
@@ -96,7 +97,9 @@ def launch_missile():
 			initial_confirm = input("Are you sure you want to do this? (yes / no)")
 			confirm = initial_confirm.lower()
 			if confirm == 'yes' or confirm == 'y':
-				casualties = initial_pop_china * range(int(0.0000002, 0.000001))
+			
+				random_number = random.uniform(0.00000002, 0.0000001)
+				casualties = initial_pop_russia * random_number
 				
 				cls()
 				
@@ -107,13 +110,17 @@ def launch_missile():
 				print("Impact. Gathering Results...")
 				time.sleep(2)
 				
-				locale.format()
-				locale.format("%d", casualties, grouping=True, monetary=True)
-				locale.format("%d", new_pop_china, grouping=True, monetary=True)
+
 				
+				percent_of_population = random_number * 100
+				printcasualties = casualties / 1000000
+				j = "\n\nCasualtes: " + str(int(printcasualties)) + " million"
+				k = (casualties * random.uniform(4.0, 7.0)) / 1000000
+				l= "Other People Affected: " + str(int(k)) + " million\n\n"
 				
-				j = "\n\nCasualtes: " + str(int(casualties))
 				print(j)
+				print("Percent of population killed: " + str('%.2f' % percent_of_population) + "%")
+				print(l)
 				time.sleep(2)
 				actions()
 				
@@ -124,7 +131,10 @@ def launch_missile():
 			initial_confirm = input("Are you sure you want to do this? (yes / no)")
 			confirm = initial_confirm.lower()
 			if confirm == 'yes' or confirm == 'y':
-				casualties = initial_pop_russia * range(int(0.0000002, 0.000001))
+			
+				random_number = random.uniform(0.00000002, 0.0000001)
+				casualties = initial_pop_russia * random_number
+				
 				
 				print("Launching Missile...")
 				time.sleep(3)
@@ -134,9 +144,15 @@ def launch_missile():
 				time.sleep(2)
 				
 				
+				percent_of_population = random_number * 100
+				printcasualties = casualties / 1000000
+				j = "\n\nCasualtes: " + str(int(printcasualties)) + " million"
+				k = (casualties * random.uniform(4.0, 7.0)) / 1000000
+				l= "Other People Affected: " + str(int(k)) + " million\n\n"
 				
-				j = "\n\nCasualtes: " + str(int(casualties))
 				print(j)
+				print("Percent of population killed: " + str('%.2f' % percent_of_population) + "%")
+				print(l)
 				time.sleep(2)
 				actions()
 				
@@ -162,6 +178,37 @@ def launch_missile():
 				time.sleep(2)
 				
 				percent_of_population = random_number * 100
+				printcasualties = casualties / 1000000
+				j = "\n\nCasualtes: " + str(int(printcasualties)) + " million"
+				k = (casualties * random.uniform(4.0, 7.0)) / 1000000
+				l= "Other People Affected: " + str(int(k)) + " million\n\n"
+				
+				print(j)
+				print("Percent of population killed: " + str('%.2f' % percent_of_population) + "%")
+				print(l)
+				time.sleep(2)
+				actions()
+				
+		elif target_country == 'russia':
+			cls()
+			initial_confirm = input("\nAre you sure you want to do this? (yes / no)  ")
+			confirm = initial_confirm.lower()
+			if confirm == 'yes' or confirm == 'y':
+			
+			
+				random_number = random.uniform(0.04, 0.10)
+				casualties = initial_pop_russia * random_number
+				
+				cls()
+				
+				print("Launching Missile...")
+				time.sleep(3)
+				print("In Flight...")
+				time.sleep(8)
+				print("Impact. Gathering Results...")
+				time.sleep(2)
+				
+				percent_of_population = random_number * 100
 				
 				
 				
@@ -175,26 +222,6 @@ def launch_missile():
 				print(j)
 				print("Percent of population killed: " + str('%.2f' % percent_of_population) + "%")
 				print(l)
-				time.sleep(2)
-				actions()
-				
-		elif target_country == 'russia':
-			initial_confirm = input("Are you sure you want to do this? (yes / no)")
-			confirm = initial_confirm.lower()
-			if confirm == 'yes' or confirm == 'y':
-				casualties = initial_pop_russia * range(int(0.01, 0.05))
-				
-				print("Launching Missile...")
-				time.sleep(3)
-				print("In Flight...")
-				time.sleep(5)
-				print("Impact. Gathering Results...")
-				time.sleep(2)
-				
-				
-				
-				j = "\n\nCasualtes: " + str(int(casualties))
-				print(j)
 				time.sleep(2)
 				actions()
 		
