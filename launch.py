@@ -4,7 +4,7 @@ import sys
 
 
 def main(argv):
-	print "Hello Jeremy"
+	print("Hello Jeremy")
 
 
 
